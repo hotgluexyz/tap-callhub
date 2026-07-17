@@ -17,7 +17,7 @@ class CallHubStream(RESTStream):
     records_jsonpath = "$.results[*]"
     primary_keys = ["id"]
     replication_key = None
-    page_size = 100
+    page_size = 1000
 
     @property
     def url_base(self) -> str:
